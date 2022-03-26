@@ -794,9 +794,59 @@ img {
   height: 11px;
   transition: fill 250ms var(--timing-formating);
 }
-.modal-btn:hover {
+/* .modal-btn:hover {
   background-color: var(--hover-color);
-}
+} */
 .modal-btn:hover .modal-icon {
-  fill: #fff;
+  fill: var(--hover-color);
+}
+.form {
+  padding: 40px;
+  outline: 2px solid #000;
+}
+.form-group {
+  outline: 1px solid orangered;
+}
+label {
+  display: block;
+  /* margin-left: 40px; */
+  margin-bottom: 5px;
+}
+input {
+  width: 448px;
+  height: 40px;
+  display: block;
+  /* margin-left: 40px;
+  margin-right: 40px; */
+  margin-bottom: 5px;
+}
+.submit {
+  /* display: inline-block; */
+  /* margin-left: 10px; */
+  background-color: var(--hover-color);
+  color: #fff;
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  border: 3px solid #000;
+}
+
+textarea {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  /* margin-left: 40px;
+  margin-right: 40px; */
+}
+.text-form {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
 }
