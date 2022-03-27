@@ -507,33 +507,46 @@
           <p class="text-form">Оставьте свои данные, мы вам перезвоним</p>
           <!-- Имя -->
           <div class="form-group">
-            <label for="name">Имя</label>
+            <label class="group-label" for="name">Имя</label>
+
             <input
+              class="group-input"
               type="text"
               name="name"
               id="name"
-              placeholder="Имя Фамилия"
+              placeholder=" "
             />
+            <svg class="input-icon">
+              <use href="images/icon/symbol-defs.svg#input-person"></use>
+            </svg>
           </div>
           <!-- Телефон -->
           <div class="form-group">
-            <label for="phone">Телефон</label>
+            <label class="group-label" for="phone">Телефон</label>
             <input
+              class="group-input"
               type="text"
               name="phone"
               id="phone"
-              placeholder="+380-93-123-45-67"
+              placeholder=" "
             />
+            <svg class="input-icon">
+              <use href="images/icon/symbol-defs.svg#input-phone"></use>
+            </svg>
           </div>
           <!-- Почта -->
           <div class="form-group">
-            <label for="mail">Почта</label>
+            <label class="group-label" for="mail">Почта</label>
             <input
+              class="group-input"
               type="text"
               name="mail"
               id="mail"
-              placeholder="example@gmail.com"
+              placeholder=" "
             />
+            <svg class="input-icon">
+              <use href="images/icon/symbol-defs.svg#input-email"></use>
+            </svg>
           </div>
           <!-- Другие примеры -->
           <!-- <div class="group" role="group">
@@ -554,8 +567,9 @@
           </div> -->
           <!-- Коментарий -->
           <div class="form-comment">
-            <label for="comment">Комментарий</label>
+            <label class="comment-label" for="comment">Комментарий</label>
             <textarea
+              class="comment-textarea"
               name="comment"
               id="comment"
               rows="10"
@@ -564,14 +578,22 @@
           </div>
           <!-- Чекбокс -->
           <div class="form-checkbox">
-            <input class="checkbox" type="checkbox" name="policy" id="policy" />
-            <label for="policy"
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            <svg class="input-icon">
+              <use href="images/icon/symbol-defs.svg#icon-check"></use>
+            </svg>
+            <label class="checkbox-label" for="policy"
               >Соглашаюсь с рассылкой и принимаю
               <a class="checkbox-link" href="">Условия договора</a></label
             >
           </div>
           <!-- Кнопка -->
-          <button class="submit" type="submit">Отправить</button>
+          <button class="form-submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
