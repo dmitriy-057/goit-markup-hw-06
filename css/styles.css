@@ -774,10 +774,11 @@ img {
 }
 .modal-btn {
   position: absolute;
+  cursor: pointer;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -794,9 +795,7 @@ img {
   height: 11px;
   transition: fill 250ms var(--timing-formating);
 }
-/* .modal-btn:hover {
-  background-color: var(--hover-color);
-} */
+
 .modal-btn:hover .modal-icon {
   fill: var(--hover-color);
 }
@@ -815,36 +814,58 @@ img {
 .form-group {
   margin-bottom: 10px;
 }
+
 .form-group label {
   margin-bottom: 4px;
+  color: var(--secondary-color);
 }
 .form-group input {
   width: 100%;
   padding: 11px 0px 11px 12px;
   margin: 0;
 }
-
-.submit {
-  background-color: var(--hover-color);
-  color: #fff;
-  height: 40px;
-  padding: 10px;
-  border: 0;
-  border-radius: 4px;
+.form-comment label {
+  color: var(--secondary-color);
 }
-
-textarea {
+.form-comment textarea {
   resize: none;
   width: 448px;
   height: 120px;
+  padding: 12px 16px;
 }
 .form-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .checkbox {
   width: 16px;
   height: 15px;
   margin-right: 9px;
+}
+.form-checkbox > label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.form-checkbox > label > a {
+  text-decoration: none;
+  color: var(--hover-color);
+  border-bottom: 1px solid #2196f3;
+}
+.submit {
+  cursor: pointer;
+  display: block;
+  background-color: var(--hover-color);
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  border: 0;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }

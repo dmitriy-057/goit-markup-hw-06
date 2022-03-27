@@ -494,7 +494,7 @@
         </div>
       </div>
     </footer>
-<!-- Модальное окно -->
+    <!-- Модальное окно -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-btn">
@@ -502,25 +502,40 @@
             <use href="images/icon/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-<!-- Форма ввода -->
+        <!-- Форма ввода -->
         <form class="form js-speaker-form" autocomplete="off">
-          <p class="text-form" >Оставьте свои данные, мы вам перезвоним</p>
-  <!-- Имя -->
+          <p class="text-form">Оставьте свои данные, мы вам перезвоним</p>
+          <!-- Имя -->
           <div class="form-group">
             <label for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Имя Фамилия"
+            />
           </div>
-  <!-- Телефон -->
+          <!-- Телефон -->
           <div class="form-group">
             <label for="phone">Телефон</label>
-            <input type="text" name="phone" id="phone" placeholder="+380-93-123-45-67"/>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="+380-93-123-45-67"
+            />
           </div>
-  <!-- Почта -->
-         <div class="form-group">
+          <!-- Почта -->
+          <div class="form-group">
             <label for="mail">Почта</label>
-            <input type="text" name="mail" id="mail" placeholder="example@gmail.com"/>
-         </div>
-        <!-- Другие примеры -->
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <!-- Другие примеры -->
           <!-- <div class="group" role="group">
             <input type="checkbox" name="topic" value="html" id="html" />
             <label for="html">HTML</label>
@@ -537,26 +552,34 @@
             <input type="radio" name="level" value="senior" id="senior" />
             <label for="senior">Senior</label>
           </div> -->
-  <!-- Коментарий -->
-          <div class="form-group">
-          <label for="comment">Оставте коментарий</label>
-          <textarea name="comment id="comment" rows="10" placeholder="Введите текст"></textarea>
-         </div>
-  <!-- Чекбокс -->
+          <!-- Коментарий -->
+          <div class="form-comment">
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <!-- Чекбокс -->
           <div class="form-checkbox">
             <input class="checkbox" type="checkbox" name="policy" id="policy" />
-            <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="" href="">Условия договора</a></label>
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-link" href="">Условия договора</a></label
+            >
           </div>
-  <!-- Кнопка -->
+          <!-- Кнопка -->
           <button class="submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
 
-<!-- Скрипт для модалки -->
+    <!-- Скрипт для модалки -->
     <script src="./js/modal.js"></script>
 
-<!-- Скрипт для формы -->
+    <!-- Скрипт для формы -->
     <script>
       (() => {
         document
