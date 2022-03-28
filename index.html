@@ -492,6 +492,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <p class="text-form">Подпишитесь на рассылку</p>
+          <label class="footer-label">
+            <input
+              class="-footer-input"
+              type="text"
+              name="mail"
+              placeholder=" "
+            />
+          </label>
+          <button class="btn-sign">Подписаться</button>
+        </form>
       </div>
     </footer>
     <!-- Модальное окно -->
@@ -588,21 +600,17 @@
             ></textarea>
           </label>
           <!-- Чекбокс -->
-          <div class="form-checkbox">
-            <input
-              class="checkbox-input"
-              type="checkbox"
-              name="policy"
-              id="policy"
-            />
-            <svg class="input-icon">
+          <label class="form-checkbox">
+            <input class="checkbox-input" type="checkbox" name="policy" />
+            <!-- <svg class="checkbox-icon">
               <use href="images/icon/symbol-defs.svg#icon-check"></use>
-            </svg>
-            <label class="checkbox-label" for="policy"
+            </svg> -->
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-label"
               >Соглашаюсь с рассылкой и принимаю
-              <a class="checkbox-link" href="">Условия договора</a></label
-            >
-          </div>
+              <a class="checkbox-link" href="">Условия договора</a>
+            </span>
+          </label>
           <!-- Кнопка -->
           <button class="form-submit" type="submit">Отправить</button>
         </form>
