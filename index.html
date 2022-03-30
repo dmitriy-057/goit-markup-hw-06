@@ -492,17 +492,26 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <p class="text-form">Подпишитесь на рассылку</p>
-          <label class="footer-label">
-            <input
-              class="-footer-input"
-              type="text"
-              name="mail"
-              placeholder=" "
-            />
-          </label>
-          <button class="btn-sign">Подписаться</button>
+        <form class="footer-form" autocomplete="off">
+          <p class="footer-form-text">Подпишитесь на рассылку</p>
+
+          <div class="footer-form-conteiner">
+            <label class="footer-label">
+              <!-- <span class="footer-form-text">Подпишитесь на рассылку</span> -->
+              <input
+                class="footer-input"
+                type="text"
+                name="mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="btn-sign">
+              <span>Подписаться</span>
+              <svg class="btn-icon">
+                <use href="images/icon/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
