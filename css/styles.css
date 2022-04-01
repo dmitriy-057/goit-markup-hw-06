@@ -796,7 +796,8 @@ img {
   transition: fill 250ms var(--timing-formating);
 }
 
-.modal-btn:hover .modal-icon {
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
   fill: var(--hover-color);
 }
 .form {
@@ -822,6 +823,9 @@ img {
   margin-bottom: 4px;
   color: var(--secondary-color);
 }
+.input-box {
+  position: relative;
+}
 .group-input {
   width: 100%;
   padding: 11px 0px 11px 42px;
@@ -834,9 +838,9 @@ img {
 .input-icon {
   display: inline-block;
   position: absolute;
-  /* top: 50%; */
+  top: 50%;
   left: 12px;
-  transform: translateY(50%);
+  transform: translateY(-50%);
   fill: #212121;
   width: 18px;
   height: 18px;
@@ -903,10 +907,7 @@ img {
 }
 /* Для того чтобы спрятать дефолтный чекбокс */
 .checkbox-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
+  visibility: hidden;
 }
 /* Иконка */
 .checkbox-icon {
