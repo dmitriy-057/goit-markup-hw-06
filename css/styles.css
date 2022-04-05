@@ -815,7 +815,6 @@ img {
 /* Форма ввода */
 .form-group {
   display: block;
-  position: relative;
   margin-bottom: 10px;
 }
 
@@ -905,10 +904,7 @@ img {
   width: 16px;
   height: 15px;
 }
-/* Для того чтобы спрятать дефолтный чекбокс */
-.checkbox-input {
-  visibility: hidden;
-}
+
 /* Иконка */
 .checkbox-icon {
   display: inline-block;
@@ -931,7 +927,8 @@ img {
   background-origin: border-box;
 }
 .checkbox-input:focus + .checkbox-icon {
-  border-color: var(--hover-color);
+  border: 2px solid var(--hover-color);
+  border-radius: 2px;
 }
 .checkbox-label {
   margin-left: 7px;
